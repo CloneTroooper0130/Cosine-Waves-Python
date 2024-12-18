@@ -1,0 +1,17 @@
+import turtle, math
+from random import randint
+wn = turtle.Screen()
+wn.bgcolor("black")
+turtle.Screen().setworldcoordinates(0, -2, 3600, 2)
+t = turtle.Turtle()
+t.pensize(20)
+t.shape("turtle")
+t.pencolor("green")
+
+def cosineWaves():
+  for x in range(int(input("Enter your number (Needs to be above 1200)"))):
+    y = math.cos(math.radians(x))
+    t.goto(x, y)
+
+cosineWaves()
+  
